@@ -1,0 +1,67 @@
+<! DOCTYPE html >
+<html >
+<head >
+<link rel ="stylesheet" href ="firstpage.css ">
+
+</head >
+
+<body >
+
+
+
+
+
+<div class="grid-container">
+  <div class="nothingleft"></div>
+  <div class="header">Dawn Treader</div>
+  
+  
+  
+  <div class="menu">
+  
+  <div class="tooltip"><button class="button" >1st Officer</button><span class="tooltiptext">Commander: Jump complete </span></div>
+  <div class="tooltip"><button class="button" >Navigation</button><span class="tooltiptext">Commander:We are in orbit of Proxim Centauri C </span></div>
+  <div class="tooltip"><button class="button" >Science</button><span class="tooltiptext">Commander: Please deploy drones</span></div>
+  <div class="tooltip"><button class="button" >Weapons</button><span class="tooltiptext">Commander: nothing to report</span></div>
+  
+  </div>
+  
+  
+  
+<div class="screen">
+<img src="./img/CentB.jpg" /><br>
+Arrived at proxim system<br>
+would really like this text to be hidden<br>
+revealed when you deploy sensors 
+</div>
+  
+
+
+
+  
+<div class="right">
+  
+   <div class="tooltip"><button onclick="playAudio()" class="button" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor drones</span></div>
+   <audio id="myAudio">
+   <source src="./sound/launchdrones.mp3" type="audio/mpeg">
+   </audio>
+   <script>
+   var x = document.getElementById("myAudio"); 
+   function playAudio() { 
+   x.play(); 
+   setTimeout(load, 3000);} 
+   </script>
+   
+   <div class="tooltip"><button onclick="location.href=''" class="button" >Jump</button><span class="tooltiptext">Press to Jump to FTL speed</span></div> 
+</div>
+  
+  
+  
+  <div class="footer"><br></div>
+  <div class="footer1">Earth's first faster than light Starship<img src="img/Dawn treader.jpg" /></div>
+  <div class="nothingright"></div>
+</div>
+
+</body >
+</html >
+

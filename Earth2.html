@@ -1,0 +1,65 @@
+<! DOCTYPE html >
+<html >
+<head >
+<link rel ="stylesheet" href ="firstpage.css ">
+
+</head >
+
+<body >
+
+
+
+
+
+<div class="grid-container">
+  <div class="nothingleft"></div>
+  <div class="header">Dawn Treader</div>
+  
+  
+  
+  <div class="menu">
+  
+  <div class="tooltip"><button class="button" >1st Officer</button><span class="tooltiptext">Commander: on your command we jump</span></div>
+  <div class="tooltip"><button class="button" >Navigation</button><span class="tooltiptext">Commander:We are in Earth orbit, course to the Proxima system laid in </span></div>
+  <div class="tooltip"><button class="button" >Science</button><span class="tooltiptext">Commander: All scientific sensor drones loaded</span></div>
+  <div class="tooltip"><button class="button" >Weapons</button><span class="tooltiptext">Commander: not expecting a fight are we?</span></div>
+  
+  </div>
+  
+  
+  
+<div class="screen">
+<img src="./img/earth.jpg" /><br>
+need to write somthing here dont know what yet.
+</div>
+  
+
+
+
+  
+<div class="right">
+  
+   <div class="tooltip"><button onclick="playAudio()" class="button" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor drones</span></div>
+   <audio id="myAudio">
+   <source src="./sound/launchdrones.mp3" type="audio/mpeg">
+   </audio>
+   <script>
+   var x = document.getElementById("myAudio"); 
+   function playAudio() { 
+   x.play(); 
+   setTimeout(load, 3000);} 
+   </script>
+   
+   <div class="tooltip"><button onclick="location.href='warpscreen.html'" class="button" >Jump</button><span class="tooltiptext">Press to Jump to FTL speed</span></div> 
+</div>
+  
+  
+  
+  <div class="footer"><br></div>
+  <div class="footer1">Earth's first faster than light Starship<img src="img/Dawn treader.jpg" /></div>
+  <div class="nothingright"></div>
+</div>
+
+</body >
+</html >
+
