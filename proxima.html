@@ -1,9 +1,8 @@
 <! DOCTYPE html >
 <html >
-<head >
-<link rel ="stylesheet" href ="firstpage.css ">
-
-</head >
+	<head >
+		<link rel ="stylesheet" href ="firstpage.css ">
+	</head >
 
 <body >
 
@@ -12,27 +11,63 @@
 
 
 <div class="grid-container">
-  <div class="nothingleft"></div>
-  <div class="header">Dawn Treader</div>
+<div class="nothingleft"></div>
+<div class="header">Dawn Treader</div>
   
   
   
-  <div class="menu">
-  
-  <div class="tooltip"><button class="button" >1st Officer</button><span class="tooltiptext">Commander: Jump complete </span></div>
-  <div class="tooltip"><button class="button" >Navigation</button><span class="tooltiptext">Commander:We are in orbit of Proxim Centauri C </span></div>
-  <div class="tooltip"><button class="button" >Science</button><span class="tooltiptext">Commander: Please deploy drones</span></div>
-  <div class="tooltip"><button class="button" >Weapons</button><span class="tooltiptext">Commander: nothing to report</span></div>
-  
-  </div>
+<div class="menu">
+  	<div class="tooltip"><button onclick="display('off')" class="button" >1st Officer</button><span class="tooltiptext">Commander: on your command we jump</span></div>
+	<div class="tooltip"><button onclick="display('nav')" class="button" >Navigation</button><span class="tooltiptext">Commander:We are in Earth orbit, course to the Proxima system laid in </span></div>
+	<div class="tooltip"><button onclick="display('sci')" class="button" >Science</button><span class="tooltiptext">Commander: All scientific sensor drones loaded</span></div>
+	<div class="tooltip"><button onclick="display('weps')" class="button" >Weapons</button><span class="tooltiptext">Commander: not expecting a fight are we?</span></div>
+	  
+</div>
   
   
   
 <div class="screen">
-<img src="./img/CentB.jpg" /><br>
-Arrived at proxim system<br>
-would really like this text to be hidden<br>
-revealed when you deploy sensors 
+        <img src="./img/CentB.jpg" /><br>
+		<div id="off" style="display:none">we have arrived at Proxima </div>
+		<div id="nav" style="display:none">We are in orbit of Proxima Centarui C</div>
+		<div id="sci" style="display:none">working on this </div>
+		<div id="weps" style="display:none">why am i hear if i dont get to shoot stuff</div>
+
+<script>
+      function display(x) {
+	    var off = document.getElementById("off");
+        var nav = document.getElementById("nav");
+        var sci = document.getElementById("sci");
+		var weps = document.getElementById("weps");
+		
+        switch (x) {
+		  case "off":
+		    off.style.display = "block";
+            nav.style.display = "none";
+            sci.style.display = "none";
+			weps.style.display = "none";
+		  break;
+          case "nav":
+            off.style.display = "none";
+            nav.style.display = "block";
+            sci.style.display = "none";
+			weps.style.display = "none";
+          break;
+          case "sci":
+            off.style.display = "none";
+            nav.style.display = "none";
+            sci.style.display = "block";
+			weps.style.display = "none";
+            break;		
+		  case "weps":
+            off.style.display = "none";
+            nav.style.display = "none";
+            sci.style.display = "none";
+			weps.style.display = "block";
+            break;
+        }
+      }
+    </script>
 </div>
   
 
@@ -57,9 +92,9 @@ revealed when you deploy sensors
   
   
   
-  <div class="footer"><br></div>
-  <div class="footer1">Earth's first faster than light Starship<img src="img/Dawn treader.jpg" /></div>
-  <div class="nothingright"></div>
+<div class="footer"><br></div>
+<div class="footer1">Earth's first faster than light Starship<img src="img/Dawn treader.jpg" /></div>
+<div class="nothingright"></div>
 </div>
 
 </body >
