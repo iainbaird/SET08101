@@ -1,0 +1,98 @@
+<! DOCTYPE html >
+<html >
+	<head >
+		<link rel ="stylesheet" href ="page.css ">
+	</head >
+
+<body >
+
+
+
+
+
+<div class="grid-container">
+<div class="nothingleft"></div>
+<div class="header">Dawn Treader</div>
+  
+  
+  
+<div class="menu">
+  	<div class="tooltip"><button onclick="display('off')" class="button" >1st Officer</button><span class="tooltiptext">I dont think we can get comms back till Earth</span></div>
+	<div class="tooltip"><button onclick="display('nav')" class="button" >Navigation</button><span class="tooltiptext">Nothing a change of underwaer won't cure </span></div>
+	<div class="tooltip"><button onclick="display('sci')" class="button" >Science</button><span class="tooltiptext">we will have to wait till Earth for a full report on Bernhard</span></div>
+	<div class="tooltip"><button onclick="display('weps')" class="button" >Weapons</button><span class="tooltiptext">Deflectors are cooling down, we used up half our charges</span></div>
+	  
+</div>
+  
+  
+  
+<div class="screen">
+        <img src="./img/wolf2.jpg" /><br>
+		<div id="off" style="display:none">That was a bit hairy commander,<br>We have arrived at Wolf 359<br> Repairs are still underway<br>long range comms are still down </div>
+		<div id="nav" style="display:none">Commander we are currently in orbit of Wolf 359 C,<br> course to Ialande 21185 has been laid in<br>We can Jump on your command</div>
+		<div id="sci" style="display:none">Commander Two planets in this system wolf 259 C and B <br>Reccommend you deploy the sensors</div>
+		<div id="weps" style="display:none">Nothing to report here Commander<br> only minor debris nothing deflectors can't handle</div>
+
+
+</div>
+  
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+	<h1>HAL 9000</h1>
+	</div>
+	<div class="modal-body">
+	<br>
+    <p>Recieving data from the drones</p>
+	<p>Wolf 359 C............        Wolf 259 B C</p>
+	<p>3.8 x mass of Earth...........7 x mass of Earth </p>
+	<p>Orbit 2.6m KM.................Orbit 275m KM </p>
+	<p>Orbit 2.68 Earth Days.........Orbit 8.04 Earth years</p>
+	<p>Avg surface temp 2426C........Frozen Avg temp -220c</p>
+	<p>High Radiation....................</p>
+	<p>..................................................</p>
+	<p>Based on returning sensor information</p>
+	<p>Wolf 359 C is far to hot to support human life anywhere</p>
+	<p>Wolf 359 B with a mass of 7 times earth would crush humans</p>
+	<p>Potential underground with gravity assist pods possible</p>
+	<p>................................................</p>
+	<p>Thanks to time dilation we can return to earth and they can send more advanced star ships</p>
+	<p>Before the arrival of the colonys</p>
+	<p>................................................</p>
+	<p>We should jump to the next planet lalande21185 b</p>
+	
+	</div>
+  </div>
+
+</div>  
+
+
+  
+<div class="right">
+  
+   <div class="tooltip"><button id="myBtn" class="button" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor</span></div>
+   <audio id="myAudio">
+   <source src="./sound/launchdrones.mp3" type="audio/mpeg">
+   </audio>
+   
+   
+   <div class="tooltip"><button onclick="location.href='warpscreen4.html'" class="button" >Jump</button><span class="tooltiptext">Press to Jump to FTL speed</span></div> 
+</div>
+
+
+  
+  
+<div class="footer"><br></div>
+<div class="footer1">Earth's first faster than light Starship<img src="img/Dawn treader.jpg" /></div>
+<div class="nothingright"></div>
+</div>
+
+
+<script src ="page.js" ></script>
+
+</body >
+</html >
+

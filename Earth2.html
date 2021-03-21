@@ -1,7 +1,7 @@
 <! DOCTYPE html >
 <html >
 	<head >
-		<link rel ="stylesheet" href ="firstpage.css ">
+		<link rel ="stylesheet" href ="page.css ">
 	</head >
 
 <body >
@@ -18,7 +18,7 @@
   
 <div class="menu">
   	<div class="tooltip"><button onclick="display('off')" class="button" >1st Officer</button><span class="tooltiptext">Commander: on your command we jump</span></div>
-	<div class="tooltip"><button onclick="display('nav')" class="button" >Navigation</button><span class="tooltiptext">Commander:We are in Earth orbit, course to the Proxima system laid in </span></div>
+	<div class="tooltip"><button onclick="display('nav')" class="button" >Navigation</button><span class="tooltiptext">Commander: Onboard computer has plotted all jumps ready to go </span></div>
 	<div class="tooltip"><button onclick="display('sci')" class="button" >Science</button><span class="tooltiptext">Commander: All scientific sensor drones loaded</span></div>
 	<div class="tooltip"><button onclick="display('weps')" class="button" >Weapons</button><span class="tooltiptext">Commander: not expecting a fight are we?</span></div>
 	  
@@ -28,74 +28,57 @@
   
 <div class="screen">
         <img src="./img/earth.jpg" /><br>
-		<div id="off" style="display:none">pls dont listen to weps</div>
-		<div id="nav" style="display:none">Im lost any idea where we are?</div>
-		<div id="sci" style="display:none">what does this button do?</div>
-		<div id="weps" style="display:none">Lets blow shit up!</div>
+		<div id="off" style="display:none">Welcome aboard Commander,<br> All departments have reported in<br> we are good to go. </div>
+		<div id="nav" style="display:none">Commander we are currently in Earth orbit,<br> course to Proxima has been laid in<br>We are good to go.</div>
+		<div id="sci" style="display:none">Commander as soon as we arrive<br>Reccommend you deploy the sensors <br>We are good to go. </div>
+		<div id="weps" style="display:none">Commander we have a full supply of heavy spatial charges<br> and our deflector lasers are all warmed up <br>We are good to go.</div>
 
-<script>
-      function display(x) {
-	    var off = document.getElementById("off");
-        var nav = document.getElementById("nav");
-        var sci = document.getElementById("sci");
-		var weps = document.getElementById("weps");
-		
-        switch (x) {
-		  case "off":
-		    off.style.display = "block";
-            nav.style.display = "none";
-            sci.style.display = "none";
-			weps.style.display = "none";
-		  break;
-          case "nav":
-            off.style.display = "none";
-            nav.style.display = "block";
-            sci.style.display = "none";
-			weps.style.display = "none";
-          break;
-          case "sci":
-            off.style.display = "none";
-            nav.style.display = "none";
-            sci.style.display = "block";
-			weps.style.display = "none";
-            break;		
-		  case "weps":
-            off.style.display = "none";
-            nav.style.display = "none";
-            sci.style.display = "none";
-			weps.style.display = "block";
-            break;
-        }
-      }
-    </script>
+
 </div>
   
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+	<h1>HAL 9000</h1>
+	</div>
+	<div class="modal-body">
+	<br>
+    <p>Commander I am HAL 9000 your ships AI.</p>
+	<p>Welcome aboard</p>
+	<p>Look forward to working with you.</P>
+	<p>I will be relaying the information gathered as we deploy sensors</p>
+	<p>You can hover over and click on your ships officer's who will advise you further</p>
+	</div>
+  </div>
+
+</div>  
 
 
   
 <div class="right">
   
-   <div class="tooltip"><button onclick="playAudio()" class="button" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor drones</span></div>
+   <div class="tooltip"><button id="myBtn" class="button" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor and HAL(3s)</span></div>
    <audio id="myAudio">
-   <source src="./sound/launchdrones.mp3" type="audio/mpeg">
+   <source src="./sound/silence.mp3" type="audio/mpeg">
    </audio>
-   <script>
-   var x = document.getElementById("myAudio"); 
-   function playAudio() { 
-   x.play(); 
-   setTimeout(load, 3000);} 
-   </script>
+   
    
    <div class="tooltip"><button onclick="location.href='warpscreen.html'" class="button" >Jump</button><span class="tooltiptext">Press to Jump to FTL speed</span></div> 
 </div>
-  
+
+
   
   
 <div class="footer"><br></div>
 <div class="footer1">Earth's first faster than light Starship<img src="img/Dawn treader.jpg" /></div>
 <div class="nothingright"></div>
 </div>
+
+
+<script src ="page.js" ></script>
 
 </body >
 </html >
