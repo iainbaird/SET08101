@@ -24,7 +24,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  
 }
+
 
 .nothingleft { 
                grid-column: 1 ;
