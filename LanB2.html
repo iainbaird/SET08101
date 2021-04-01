@@ -1,0 +1,99 @@
+<! DOCTYPE html >
+<html >
+	<head >
+		<link rel ="stylesheet" href ="page.css ">
+	</head >
+
+<body >
+
+
+
+
+
+<div class="grid-container">
+<div class="nothingleft"></div>
+<div class="header">Dawn Treader</div>
+  
+  
+  
+<div class="menu">
+  	<div class="tooltip"><button onclick="display('off')" class="glow" >1st Officer</button><span class="tooltiptext">Aliens? did HAL just say Aliens?</span></div>
+	<div class="tooltip"><button onclick="display('nav')" class="glow" >Navigation</button><span class="tooltiptext">Cancelling the jump</span></div>
+	<div class="tooltip"><button onclick="display('sci')" class="glow" >Science</button><span class="tooltiptext">We have to investigate</span></div>
+	<div class="tooltip"><button onclick="display('weps')" class="glow" >Weapons</button><span class="tooltiptext">Deflectors could be used as weapons if needed</span></div>
+	  
+</div>
+  
+  
+  
+<div class="screen">
+        <img src="./img/LanB.jpg" /><br>
+		<div id="off" style="display:none">Commander<br>We should help "Green"<br> Based on comms they are under attack <br>and need our help<br><br><button onclick="location.href='final/green.html'" class="glow">Green</button> </div>
+		<div id="nav" style="display:none">Commander<br>We should help "Blue"<br> Based on comms they are under attack<br>and need our help<br><br><button onclick="location.href='final/blue.html'" class="glow">Blue</button> </div>
+		<div id="sci" style="display:none">Commander<br>This is monumental<br>We need to get this info back to earth asap<br><br><button onclick="location.href='final/earth.html'" class="glow">Earth</button> </div>
+		<div id="weps" style="display:none">Commander<br>I suggest we wait<br>Maybe we can make first contact<br><br><button onclick="location.href='final/wait.html'" class="glow">Wait</button> </div>
+
+
+</div>
+  
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-header">
+	<h1>HAL 9000</h1>
+	<h2>Alien Protocols Engaged</h2>
+	</div>
+	<div class="modal-body">
+	<br>
+    <p>Commander I have detected 2 ships of unknown configuration at the far side of the system</p>
+	<p>One large vessel - Identified as "Green", one smaller vessel - Identified as "Blue"</p>
+	<p>Commander I am detecting high energy particle weapons fire between them</p>
+	<p>.....................................................................</p>
+	<br>
+	<p>Comander I am picking up long range communication from both ships directed at us </p>
+	<p>Attempting to translate</p>
+	<p>.....................................................................</p>
+	<br>
+	<p>"Green" - Help Help Help ********Attack*******Miners*******Help Help Help</p>
+	<p>"Blue" - Help *****Needed*******Miners*******Killers</p>
+	<p>Sorry Commander thats the best I can do, We are still having an issue with comm's</p>
+	<p>.....................................................................</p>
+	<br>
+	<p>I suggest consulting all 4 of your officers before making a decision on what we do now</p>
+	
+	
+	
+	</div>
+  </div>
+
+</div>  
+
+
+  
+<div class="right">
+  
+   <div class="tooltip"><button id="myBtn" class="glow" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor</span></div>
+   <audio id="myAudio">
+   <source src="./sound/silence.mp3" type="audio/mpeg">
+   </audio>
+   
+   
+   <div class="tooltip"><button onclick=" " class="glow" >Jump</button><span class="tooltiptext">FTL suspended Alien Protocol</span></div> 
+</div>
+
+
+  
+  
+<div class="footer"><br></div>
+<div class="footer1">Earth's first faster than light Starship<img src="img/Dawn treader.jpg" /></div>
+<div class="nothingright"></div>
+</div>
+
+<script> var openmodal = true </script>
+<script src ="page.js" ></script>
+
+</body >
+</html >
+

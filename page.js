@@ -37,10 +37,16 @@
 	  
 var x = document.getElementById("myAudio"); 
 
-
   
   // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("myModal"); 
+
+if (typeof openmodal !== 'undefined'){
+window.onload = function()
+  {
+  modal.style.display = "block";
+  }
+}
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -49,10 +55,14 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
+
+if (btn != null) {
+
 btn.onclick = function() {
   x.play();
   setTimeout(function(){  
   modal.style.display = "block"; }, 2000)
+}
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -67,3 +77,24 @@ window.onclick = function(event) {
   }
 }
 
+
+// Get the button that opens the next page after sound
+var btn2 = document.getElementById("btnlan");
+
+// When the user clicks the button, open the next page
+if (btn2 != null) {
+btn2.onclick = function() {
+  x.play();
+  setTimeout(function(){
+            window.location.href = 'LanB2.html';
+         }, 3000);
+}
+}
+ 
+
+
+
+
+
+  
+  

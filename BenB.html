@@ -1,10 +1,11 @@
 <! DOCTYPE html >
 <html >
 	<head >
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel ="stylesheet" href ="page.css ">
 	</head >
 
-<body >
+<body class="shake" >
 
 <audio autoplay>
   <source src="./sound/coll.mp3" type="audio/mpeg">
@@ -20,10 +21,10 @@
   
   
 <div class="menu">
-  	<div class="tooltip"><button onclick="display('off')" class="button" >1st Officer</button><span class="tooltiptext">Commander: Long range comms are down</span></div>
-	<div class="tooltip"><button onclick="display('nav')" class="button" >Navigation</button><span class="tooltiptext">Commander: Jump engines are still warm we can jump </span></div>
-	<div class="tooltip"><button onclick="display('sci')" class="button" >Science</button><span class="tooltiptext">Commander: Look at the planet it's?</span></div>
-	<div class="tooltip"><button onclick="display('weps'); playAudio2()" class="button" >Weapons</button><span class="tooltiptext">Deflectors are overheating</span></div>
+  	<div class="tooltip"><button onclick="display('off')" class="glow" >1st Officer</button><span class="tooltiptext">Commander: Long range comms are down</span></div>
+	<div class="tooltip"><button onclick="display('nav')" class="glow" >Navigation</button><span class="tooltiptext">Commander: Jump engines are still warm we can jump </span></div>
+	<div class="tooltip"><button onclick="display('sci')" class="glow" >Science</button><span class="tooltiptext">Commander: Look at the planet it's?</span></div>
+	<div class="tooltip"><button onclick="display('weps'); playAudio2()" class="glow" >Weapons</button><span class="tooltiptext">Deflectors are overheating</span></div>
 	   <audio loop id="myAudio2">
 	   <source src="./sound/woosh2.mp3" type="audio/mpeg">
 	   </audio>
@@ -40,7 +41,7 @@
   
   
 <div class="screen">
-        <img src="./img/BernB.jpg" /><br>
+        <img src="./img/BernB.jpg" ><br>
 		<div id="off" style="display:none">Commander we are taking damage<br>We jumped in to the middle of an asteriod field<br>Deploying repair bots</div>
 		<div id="nav" style="display:none">Commander We are right where we are supposed to be<br>This asteriod field is not suposed to be here<br>Manovering to aviod</div>
 		<div id="sci" style="display:none">Commander I am getting some strange reading<br>Reccommend you deploy the sensors<br>More detailed reads are needed </div>
@@ -83,13 +84,13 @@
   
 <div class="right">
   
-   <div class="tooltip"><button id="myBtn" class="button" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor drones</span></div>
+   <div class="tooltip"><button id="myBtn" class="glow" >Sensor</button><span class="tooltiptext">Press to Deploy long range sensor drones</span></div>
    <audio id="myAudio">
    <source src="./sound/launchdrones.mp3" type="audio/mpeg">
    </audio>
    
    
-   <div class="tooltip"><button onclick="location.href='warpscreen3.html'" class="button" >Jump</button><span class="tooltiptext">Press to Jump to FTL speed</span></div> 
+   <div class="tooltip"><button onclick="location.href='warp/warpscreen3.html'" class="glow" >Jump</button><span class="tooltiptext">Press to Jump to FTL speed</span></div> 
 </div>
 
 
