@@ -268,16 +268,6 @@ body {
   text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
 }
 
-
-
-
-
-
-
-
-
-
-
 .glow {
     box-shadow: 3px 4px 0px 0px #899599;
 	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
